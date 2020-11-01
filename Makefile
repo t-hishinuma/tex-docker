@@ -11,3 +11,6 @@ numa-latex: login
 
 push: login numa-latex
 		docker push $(REGISTRY):latest
+
+in: 
+		docker run -it $(REGISTRY):latest 
